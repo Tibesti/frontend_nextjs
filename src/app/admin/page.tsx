@@ -91,7 +91,7 @@ function AdminHome() {
                     <tbody>
                         {
                             usersList.map((item:IUser)=>(
-                                <tr>
+                                <tr key={item.id}>
                                     <td>
                                         <div className="flex items-center gap-x-1.5">
                                             <div className="w-[30px] relative h-[30px] bg-blue-300 rounded-full overflow-hidden flex items-center justify-center">
